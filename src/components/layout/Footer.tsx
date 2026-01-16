@@ -89,20 +89,22 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Send Message */}
+          {/* Chat With Us (WhatsApp) */}
           <div className="space-y-4">
-            <h4 className="font-serif text-lg font-semibold">Get in Touch</h4>
+            <h4 className="font-serif text-lg font-semibold">Chat With Us</h4>
             <p className="text-primary-foreground/80 text-sm">
-              Have questions? Send us a message and we'll get back to you shortly.
+              Have questions? Chat with us directly on WhatsApp and get instant replies!
             </p>
-            <EmailModal
-              trigger={
-                <button className="inline-flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground text-sm rounded-lg transition-colors border border-primary-foreground/20">
-                  <Mail size={16} />
-                  Send Email
-                </button>
-              }
-            />
+            <a
+              href="https://wa.me/255716324929"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#244e34] hover:bg-[#128C7E] text-white text-sm rounded-lg transition-colors border border-[#25D366] shadow"
+              aria-label="Chat on WhatsApp"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.1 3.2 5.077 4.363.71.306 1.263.489 1.696.625.713.227 1.362.195 1.874.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347z" fill="currentColor"/><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/></svg>
+              Chat on WhatsApp
+            </a>
           </div>
         </div>
 
