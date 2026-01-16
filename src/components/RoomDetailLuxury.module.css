@@ -1,0 +1,157 @@
+.luxuryModalSmall {
+  max-width: 350px !important;
+  width: 98vw !important;
+  border-radius: 18px;
+}
+.luxuryModal__amenitiesHeading {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.luxuryModal {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(44, 36, 18, 0.18), 0 1.5px 6px rgba(44, 36, 18, 0.10);
+  max-width: 98vw;
+  width: 100%;
+  padding: 0;
+}
+
+.luxuryModal__imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #E8DCC4;
+}
+
+.luxuryModal__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.luxuryModal__gradient {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 40%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(30, 24, 18, 0.82) 100%);
+  z-index: 2;
+}
+
+.luxuryModal__priceBadge {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 3;
+  background: rgba(255,255,255,0.95);
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 10px 28px;
+  box-shadow: 0 2px 8px rgba(44,36,18,0.08);
+}
+
+.luxuryModal__content {
+  position: relative;
+  z-index: 4;
+  padding: 36px 36px 28px 36px;
+  color: #222;
+  background: #fff;
+  font-family: 'Inter', 'Open Sans', Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .luxuryModal__content {
+    padding: 18px 10px 16px 10px;
+  }
+  .luxuryModal__priceBadge {
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    padding: 7px 16px;
+  }
+}
+
+.luxuryModal__heading {
+  font-family: 'Playfair Display', 'Cormorant', Georgia, serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.luxuryModal__desc {
+  font-size: 1.08rem;
+  color: #444;
+  font-family: 'Inter', 'Open Sans', Arial, sans-serif;
+  margin-bottom: 18px;
+}
+
+.luxuryModal__amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.luxuryModal__amenityBadge {
+  background: rgba(212,162,87,0.13);
+  color: #B8713C;
+  font-size: 13px;
+  border-radius: 999px;
+  padding: 5px 16px;
+  font-weight: 500;
+  font-family: 'Inter', 'Open Sans', Arial, sans-serif;
+  box-shadow: 0 1px 4px rgba(44,36,18,0.07);
+}
+
+.luxuryModal__infoRow {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #B8713C;
+  font-size: 1rem;
+}
+
+.luxuryModal__actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.luxuryModal__closeBtn {
+  background: #eee;
+  color: #B8713C;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  flex: 1;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.luxuryModal__closeBtn:hover {
+  background: #e8dcc4;
+}
+
+.luxuryModal__bookBtn {
+  background: linear-gradient(90deg, #D4A257 0%, #E8A546 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  flex: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(198,125,62,0.13);
+  transition: background 0.18s;
+}
+.luxuryModal__bookBtn:hover {
+  background: linear-gradient(90deg, #E8A546 0%, #D4A257 100%);
+}

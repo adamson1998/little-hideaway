@@ -1,0 +1,72 @@
+.zIndex0 {
+  z-index: 0;
+}
+
+.fadeInUpDelay0 { animation-delay: 0s; }
+.fadeInUpDelay1 { animation-delay: 0.1s; }
+.fadeInUpDelay2 { animation-delay: 0.2s; }
+.fadeInUpDelay3 { animation-delay: 0.3s; }
+
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.valueCard {
+  position: relative;
+  cursor: pointer;
+}
+
+/* The yellow border line that appears on hover */
+.gradientBorder {
+  pointer-events: none;
+  position: absolute;
+  inset: -3px; /* Slight offset to make border visible outside the card */
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 2;
+  border: 3px solid transparent;
+  background: linear-gradient(135deg, #FFD700, #FFA500, #FF6B6B, #4ECDC4) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.valueCard:hover .gradientBorder,
+.valueCard:focus-visible .gradientBorder {
+  opacity: 1;
+}
+
+/* Subtle background gradient on hover */
+.gradientBg {
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.valueCard:hover .gradientBg {
+  opacity: 0.08;
+}
+
+.valueCardContent {
+  position: relative;
+  z-index: 3;
+}

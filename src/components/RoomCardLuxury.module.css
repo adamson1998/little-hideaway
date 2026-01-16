@@ -1,0 +1,237 @@
+.room-card-img-hover {
+}
+.luxuryRoomCard__imgWrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.roomCardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(.4,2,.3,1);
+}
+.luxuryRoomCard:hover .roomCardImg,
+.luxuryRoomCard:focus-within .roomCardImg {
+  transform: scale(1.12);
+}
+.luxuryRoomCard {
+  width: 100%;
+  max-width: 420px;
+  height: 540px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(44, 36, 18, 0.18), 0 1.5px 6px rgba(44, 36, 18, 0.10);
+  background: #E8DCC4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: 'Inter', 'Open Sans', Arial, sans-serif;
+  margin: 0 auto;
+  transition: box-shadow 0.2s;
+  /* Removed border for home page suites images */
+}
+
+.luxuryRoomCard:hover, .luxuryRoomCard:focus-within {
+  /* Removed border and border-color for home page suites images */
+}
+
+.room-card-img {
+  transition: transform 0.5s cubic-bezier(.4,2,.3,1);
+}
+.luxuryRoomCard:hover .room-card-img,
+.luxuryRoomCard:focus-within .room-card-img {
+  transform: scale(1.12);
+}
+
+@media (max-width: 600px) {
+  .luxuryRoomCard {
+    height: 420px;
+    min-height: 340px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(44,36,18,0.13);
+    padding-bottom: 0;
+  }
+}
+.luxuryRoomCard__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.luxuryRoomCard__gradient {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 38%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(30, 24, 18, 0.82) 100%);
+  z-index: 2;
+}
+
+.luxuryRoomCard__priceBadge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  background: rgba(255,255,255,0.92);
+  color: #222;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 7px 22px;
+  box-shadow: 0 2px 8px rgba(44,36,18,0.08);
+}
+
+.luxuryRoomCard__content {
+  position: relative;
+  z-index: 4;
+  padding: 0 20px 22px 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .luxuryRoomCard__content {
+    padding: 0 12px 14px 12px;
+    gap: 8px;
+  }
+}
+
+.luxuryRoomCard__heading {
+  font-family: 'Playfair Display', 'Cormorant', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 600px) {
+  .luxuryRoomCard__heading {
+    font-size: 1.25rem;
+    margin-bottom: 1px;
+  }
+}
+
+.luxuryRoomCard__desc {
+  font-size: 1.08rem;
+  color: #f3f3f3;
+  font-family: 'Inter', 'Open Sans', Arial, sans-serif;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .luxuryRoomCard__desc {
+    font-size: 0.98rem;
+    margin-bottom: 4px;
+  }
+}
+
+.luxuryRoomCard__amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.luxuryRoomCard__amenityBadge {
+  background: rgba(255,255,255,0.85);
+  color: #222;
+  font-size: 13px;
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-weight: 500;
+  font-family: 'Inter', 'Open Sans', Arial, sans-serif;
+  box-shadow: 0 1px 4px rgba(44,36,18,0.07);
+  margin-bottom: 2px;
+}
+
+@media (max-width: 600px) {
+  .luxuryRoomCard__amenityBadge {
+    font-size: 11.5px;
+    padding: 3px 10px;
+  }
+}
+
+.luxuryRoomCard__bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.13);
+}
+
+@media (max-width: 600px) {
+  .luxuryRoomCard__bottomBar {
+    margin-top: 8px;
+    padding-top: 5px;
+  }
+}
+
+ .luxuryRoomCard__viewDetails {
+  color: #D4A257;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Playfair Display', 'Cormorant', Georgia, serif;
+  cursor: pointer;
+  background: rgba(255,255,255,0.18);
+  border: 1.5px solid #D4A257;
+  border-radius: 999px;
+  padding: 8px 22px;
+  box-shadow: 0 1px 6px rgba(212,162,87,0.08);
+  transition: background 0.18s, color 0.18s, border 0.18s;
+  outline: none;
+  letter-spacing: 0.01em;
+}
+
+.luxuryRoomCard__viewDetails:hover, .luxuryRoomCard__viewDetails:focus {
+  background: linear-gradient(90deg, #D4A257 0%, #E8A546 100%);
+  color: #fff;
+  border-color: #E8A546;
+}
+
+@media (max-width: 600px) {
+  .luxuryRoomCard__viewDetails {
+    font-size: 14px;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .luxuryRoomCard__viewDetails {
+    font-size: 14px;
+  }
+}
+
+.luxuryRoomCard__bookNow {
+  background: linear-gradient(90deg, #D4A257 0%, #E8A546 100%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 28px;
+  cursor: pointer;
+  font-family: 'Inter', 'Open Sans', Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(198,125,62,0.13);
+  transition: background 0.2s, font-size 0.15s, padding 0.15s;
+}
+.luxuryRoomCard__bookNow:hover {
+  background: linear-gradient(90deg, #E8A546 0%, #D4A257 100%);
+}
+
+@media (max-width: 600px) {
+  .luxuryRoomCard__bookNow {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
